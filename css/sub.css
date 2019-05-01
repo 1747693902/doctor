@@ -1,0 +1,29 @@
+
+/*首页按钮栏*/
+
+#btn>span>img{
+	width: 30px;
+	height:30px;
+}
+.mui-bar-tab>p>span{
+	display: flex;
+	justify-content: center;
+}
+.mui-bar-tab>p>span{
+	font-size: 15px;
+}
+
+.mui-bar-tab>a>span{
+	display: flex;
+	justify-content: center;
+}
+.mui-bar-tab>a>span{
+	font-size: 15px;
+}
+.mui-bar-tab>a>span>img{
+	width: 30px;
+	height: 30px;
+}
+.mui_color>span{
+	color: #28b7a3;
+}
