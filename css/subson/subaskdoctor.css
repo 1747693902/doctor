@@ -1,0 +1,133 @@
+.mui-bar-nav>a{
+	color: #000;
+}
+.mui-bar-nav>a>span{
+	font-size: 18px;
+}
+.subask_ulo{
+	display: flex;
+	margin: 20px auto 10px;
+	width: 90%;
+	background: #EFEFEF;
+	padding: 5px;
+	font-size: 18px;
+	color: #666;
+	border-radius: 10px;
+}
+.subask_ulo>li{
+	margin-right: 5px;
+}
+.subask_dl{
+	margin: 15px auto;
+	width: 95%;
+	display: flex;
+	align-items: center;
+}
+.subask_dl>dt{
+	font-size: 18px;
+	font-weight: 700;
+	opacity: 0.8;
+	margin: 0 15px 10px;
+}
+.subask_dl{
+	border-bottom: 1px solid #ccc;
+}
+.subask_dl>dt>span{
+	color: #2AC845;
+}
+.subask_dl>dd{
+	font-size: 12px;
+	color: #666;
+	margin: 0 5px 10px;
+}
+.subask_dl>dd>span{
+	padding-left: 15px;
+	color: #ccc;
+	font-size: 12px;
+}
+.subask_ult{
+	display:flex ;
+	justify-content: space-around;
+}
+.subask_ult>li{
+	padding: 5px 0;
+}
+.subask_ult>li>img,dl{
+	display: inline-block;
+}
+.subask_ult>li>img{
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+.subask_ult>li>dl{
+	font-size: 12px;
+	color: #666;
+	vertical-align: middle;
+}
+.subask_ult>li>dl>dt{
+	font-size: 15px;
+	font-weight: 600;
+	color: #000;
+}
+.subask_ult>li>span{
+	display: inline-block;
+	border-right: 1px solid #ccc;
+	height: 35px;
+	line-height: 20px;
+}
+.sub_ask_son>span{
+	display: block;
+	color: #666;
+	padding: 15px 10px 10px;
+}
+.sub_ask_son{
+	padding-bottom: 15px;
+}
+.sub_ask_son>ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.sub_ask_son>ul>li{
+	width: 33.3%;
+}
+.sub_ask_son>ul>li>a{
+	display: block;
+	margin: 5px auto;
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	background: #EFEFEF;
+	text-align: center;
+	color: #000;
+	border-radius: 5px;
+	font-weight: 700;
+}
+
+.sub_ask_sont>span{
+	display: block;
+	color: #666;
+	padding: 15px 10px 10px;
+}
+.sub_ask_sont{
+	padding-bottom: 15px;
+}
+.sub_ask_sont>ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.sub_ask_sont>ul>li{
+	width: 33.3%;
+}
+.sub_ask_sont>ul>li>a{
+	display: block;
+	margin: 5px auto;
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	background: #EFEFEF;
+	text-align: center;
+	color: #000;
+	border-radius: 5px;
+	font-size: 15px;
+}

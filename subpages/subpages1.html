@@ -31,29 +31,30 @@
 	<body>
 		<header class="mui-bar mui-bar-nav" style="background:#fff;height: 55px;">	
 			<ul class="sub1_ul">
-				<li class="inpmoni"><span class="mui-icon mui-icon-search"></span>&nbsp; 那里不舒服</li>
+				<li class="inpmoni" id="search"><span class="mui-icon mui-icon-search" ></span>&nbsp; 那里不舒服</li>
 				<li><span class="mui-icon mui-icon-contact" style="color: #2AC845;"></span></li>
 			</ul>	
 	</header>
+	<script type="text/javascript" src="../js/Jump.js" ></script>
 	<div class="mui-content mui-scroll-wrapper" id="pullrefresh">
 			<div class="mui-scroll">	
 				<div class="bacck_whit">
 					<ul class="sub1_lis">
-						<li>
+						<li class="a" htmlName = 'subson/subaskdoctor.html'>
 							<a href="#">
 								<img src="../imgs/ic_inquisition_doctor.png"/>
 								<h4>问医生</h4>
 								<span>按课室找医生</span>
 							</a>
 						</li>
-						<li>
+						<li class="a" htmlName = 'subson/subaskdoctor.html'>
 							<a href="#">
 								<img src="../imgs/one.png"/>
 								<h4>名医义诊</h4>
 								<span>新人1元起</span>
 							</a>
 						</li>
-						<li>
+						<li class="a" htmlName = 'subson/subaskdoctor.html'>
 							<a href="#">
 								<img src="../imgs/ic_default_drug_medical.png"/>
 								<h4>在线够药</h4>
@@ -139,14 +140,17 @@
 		</div>
 		<script type="text/javascript" src="../js/sub1/sub1.js" ></script>
 		<script type="text/javascript">
-//			mui.init({
-//				subpages:[{
-//					url:'subson/sub1.html',
-//					styles:{
-//						top:'45px',
-//					}
-//				}]
-//			})
+		document.getElementById('search').addEventListener('tap',function(){
+//			console.log(22222);
+			 mui.openWindow({
+					url:'subson/subsearch.html',
+				show:{
+				      autoShow:true,//页面loaded事件发生后自动显示，默认为true
+//				      aniShow:"slide-in-bottom",//页面显示动画，默认为”slide-in-right“；
+				      duration:300//页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+				    },
+			})
+		});
 		</script>
 	</body>
 </html>

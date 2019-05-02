@@ -142,7 +142,10 @@
 				"resources": [
 					"subpages/subson/sub1.html"
 				],
-				"refer": [],
+				"refer": [
+					"subpages/subson/subsearch.html",
+					"subpages/subson/subaskdoctor.html"
+				],
 				"priority": 0
 			}
 		},

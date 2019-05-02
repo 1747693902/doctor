@@ -14,7 +14,9 @@
 			"subpages/subson/sub1.html"
 		],
 		"refer": [
-			"subpages/subson/sub1.html"
+			"subpages/subson/sub1.html",
+			"subpages/subson/subsearch.html",
+			"subpages/subson/subaskdoctor.html"
 		]
 	}
 }
