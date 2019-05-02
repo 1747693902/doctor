@@ -1,0 +1,125 @@
+.bacck_whit>span{
+	display: block;
+	margin-top: 10px;
+	font-size: 20px;
+	padding-right: 20px;
+	color: #666;	
+}
+.box_ul2{
+	padding: 15px 0;
+	background: linear-gradient(#fff,#FAFBBC);
+}
+.box_ul2>li>a>span:first-child{
+	margin-left: 20px;
+}
+.box_ul2>li>a>span:last-child{
+	color: #000000;
+	font-weight: 800;
+	font-size: 20px;
+	padding-left: 5px;
+}
+.box_ul2>li{
+	margin-top: 10px;
+}
+.box_ul2>li>a>span>img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #F2F2F2;
+	vertical-align: middle;
+}
+.box_ul2>li>ul{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.box_ul2>li>ul>li>a{
+	color: #000000;
+	font-weight: 700;
+}
+.box_ul2>li>ul>li>a>p{
+	color: #777;
+	font-weight: 400;
+	font-size: 12px;
+	
+}
+.box_ul3{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 5px 0;
+}
+.box_ul3>li:nth-child(1) a>span{
+	font-size: 25px;
+	color: #2AC845;	
+}
+.box_ul3>li:nth-child(2) a>span{
+	font-size: 22px;
+	color: #F0AD4E;
+}
+.box_ul3>li:nth-child(3) a>span{
+	font-size: 22px;
+	color: #4CD964;
+}
+.box_ul3>li:nth-child(4) a>span{
+	font-size: 22px;
+	color: #2053F3;
+}
+.box_ul3>li:nth-child(5) a>span{
+	font-size: 22px;
+	color: #2AC845;	
+}
+
+.box_ul3>li>a>p{
+	font-size: 12px;
+	color: #000000;
+	font-weight: 400;
+}
+.box_ul4>li>a>p{
+	padding: 10px 10px 0;
+	font-size: 18px;
+	color: #000000;
+	font-weight:500;
+}
+.box_ul4>li>a>p>span{
+	background: #2AC845;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 4px;
+	padding:2px 5px;
+	margin-left: 5px;
+}
+.box_ul4>li>a>dl{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+.box_ul4>li>a>dl>dd:first-child{
+	font-size: 12px;
+	color: #555555;	
+}
+.box_ul4>li>a>dl>dd:last-child{
+	position: relative;
+	top: -15px;
+	color: #666;
+}
+.box_ul5{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+	
+}
+.box_ul5>li:first-child{
+	color: #000000;
+	font-weight: 500;
+}
+
+.box_ul5>li:last-child{
+	color: #555555;	
+}
+.footer{
+	padding: 15px 0;
+	text-align: center;
+}

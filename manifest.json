@@ -125,5 +125,46 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"subpages/subpages1.html"
+				],
+				"refer": [
+					"subpages/subpages2.html",
+					"subpages/subpages3.html"
+				],
+				"priority": 0
+			},
+			"subpages/subpages1.html": {
+				"resources": [
+					"subpages/subson/sub1.html"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"fonts/mui.ttf",
+				"css/mui.css",
+				"imgs/ic_home_n.png",
+				"imgs/ic_mine_s.png",
+				"imgs/ic_home_s.png",
+				"js/sub.js",
+				"js/mui.min.js",
+				"js/jquery-1.11.0.js",
+				"css/iconfont.css",
+				"css/mui.min.css",
+				"css/sub.css",
+				"fonts/iconfont.ttf",
+				"js/mui.js",
+				"imgs/ic_inquiry_homepage.png",
+				"imgs/ic_mine_n.png",
+				"README.md"
+			]
+		}
 	}
 }

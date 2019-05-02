@@ -15,24 +15,97 @@
     	}
     </style>
     <script type="text/javascript" charset="utf-8">
-      	mui.init();
+   
     </script>
 </head>
 <body>
 	<nav class="mui-bar mui-bar-tab">
-	    <a class="mui-tab-item mui-active mui_color  pic">
+	    <a class="mui-tab-item mui-active mui_color pic"  href="subpages/subpages1.html">
 	        <span><img src="imgs/ic_home_s.png"/ id="pichome"></span>
 	        <span class="">首页</span>
 	    </a>
-	    <p class="mui-tab-item" id="btn" style="background:;">
+	    <p class="mui-tab-item" id="btn" >
 	        <span class=""><img src="imgs/ic_inquiry_homepage.png"/></span>
 	        <span class="">问诊</span>
 	    </p>
-	    <a class="mui-tab-item">
-	        <span><img src="imgs/ic_mine_n.png"/></span>
+	    <a class="mui-tab-item  picmy" href="subpages/subpages2.html">
+	        <span><img src="imgs/ic_mine_n.png"/ id='picmy'></span>
 	        <span class="">我的</span>
 	    </a>
 	</nav>
 	<script type="text/javascript" src="js/sub.js" ></script>
+	<script type="text/javascript">
+		var subpages = ['subpages/subpages1.html', 'subpages/subpages2.html'];
+		var subpage_style = {
+				top: '0px',	
+				bottom: '51px'
+			};
+			var aniShow = {};
+			//创建子页面，首个选项卡页面显示，其它均隐藏；
+			mui.plusReady(function() {
+				var self = plus.webview.currentWebview();//获取当前页面的窗口对象
+				for(var i = 0; i < subpages.length; i++) {
+					var temp = {};
+					var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);	
+					if(i > 0) {
+						sub.hide();
+					} else {
+						temp[subpages[i]] = "true";
+						mui.extend(aniShow, temp);//合并对象就如同并集一样
+					}
+					self.append(sub);
+				}
+			});
+			//当前激活选项
+			var activeTab = subpages[0];
+
+			//选项卡点击事件
+			mui('.mui-bar-tab').on('tap', 'a', function(e) {
+				var targetTab = this.getAttribute('href');
+				if(targetTab == activeTab) {
+//					this.classList.add= 'ww';
+					return;
+				}
+				//显示目标选项卡
+				//若为iOS平台或非首次显示，则直接显示
+				if(mui.os.ios || aniShow[targetTab]) {
+					plus.webview.show(targetTab);
+				} else {
+					//否则，使用fade-in动画，且保存变量
+					var temp = {};
+					temp[targetTab] = "true";
+					mui.extend(aniShow, temp);
+					plus.webview.show(targetTab, "fade-in", 300);
+//					this.classList.remove = 'ww' 
+				}
+				//隐藏当前;
+				plus.webview.hide(activeTab);
+				//更改当前活跃的选项卡
+				activeTab = targetTab;
+			});
+			//自定义事件，模拟点击“首页选项卡”
+			document.addEventListener('gohome', function() {
+				var defaultTab = document.getElementById("defaultTab");
+				//模拟首页点击
+				mui.trigger(defaultTab, 'tap');
+				//切换选项卡高亮
+				var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+				if(defaultTab !== current) {
+					current.classList.remove('mui-active');
+					defaultTab.classList.add('mui-active');
+				}
+			});
+		   document.getElementById('btn').addEventListener('tap',function(){
+//			console.log(22222);
+			 mui.openWindow({
+					url:'subpages/subpages3.html',
+				show:{
+				      autoShow:true,//页面loaded事件发生后自动显示，默认为true
+				      aniShow:"slide-in-bottom",//页面显示动画，默认为”slide-in-right“；
+				      duration:300//页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+				    },
+			})
+		});
+	</script>
 </body>
 </html>
