@@ -74,3 +74,46 @@
 .today{
 	margin: 0 15px 20px;	
 }
+#register_mianban{	
+				margin: 100px auto 0;
+				width: 80%;
+				height: 250px;
+				border: 1px solid #2AC845;
+				border-radius: 10px;	
+				box-shadow: 0 0 5px #2AC845;
+				overflow: auto;
+				background: #fff;
+			}
+			#register_mianban input{
+				width: 70%;
+				height:45px;
+				/*border: 0 none;*/
+			}
+			#register_mianban label{
+				font-size: 25px;
+				margin-left: 10px;
+			}
+			form{
+				margin-top: 20px;
+			}
+			 .conter{
+			 	margin-top: 10px;
+				text-align: center;
+			}
+			 .conter>span{
+			 	font-size: 18px;
+			 }
+			 .conter>span>a{
+			 	color: #2AC845;
+			 }
+			 .son{
+			 	margin-top: 30px;
+			 	text-align: center;
+			 }
+			 .son>a{
+			 	font-size: 20px;
+			 	color: #fff;
+			 	background:#2AC845;
+			 	padding: 5px 10px;
+			 	border-radius: 5px;
+			 }

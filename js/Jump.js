@@ -1,8 +1,8 @@
 //主要为了页面跳转模块
 //页面跳转
-console.log(22222);
+//console.log(22222);
 			mui('body').on("tap", ".a", function(e) {
-				console.log(1111);
+//				console.log(1111);
 			var title=this.getAttribute("title");		//获取需要的传值
 			var htmlName=this.getAttribute("htmlName")	//获取点击事件需要跳转的网址
 			

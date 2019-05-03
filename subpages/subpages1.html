@@ -25,6 +25,16 @@
 				background: #fff;
 				margin-bottom: 10px;
 			}
+			#register_mianban{				
+			}
+			.box_mengban{
+				width: 100%;
+				height: 100%;
+				background: rgba(204,204,204,0.4);
+				position: fixed;
+				z-index: 9999;
+				display: none;
+			}
 		</style>
 		<script type="text/javascript" src="../js/mui.js" ></script>
 	</head>
@@ -32,12 +42,32 @@
 		<header class="mui-bar mui-bar-nav" style="background:#fff;height: 55px;">	
 			<ul class="sub1_ul">
 				<li class="inpmoni" id="search"><span class="mui-icon mui-icon-search" ></span>&nbsp; 那里不舒服</li>
-				<li><span class="mui-icon mui-icon-contact" style="color: #2AC845;"></span></li>
+				<li id="register"><span class="mui-icon mui-icon-contact" style="color: #2AC845;"></span></li>
 			</ul>	
 	</header>
 	<script type="text/javascript" src="../js/Jump.js" ></script>
-	<div class="mui-content mui-scroll-wrapper" id="pullrefresh">
-			<div class="mui-scroll">	
+			<div class="box_mengban" id="box_mengban">				
+					<div id="register_mianban">
+						<form class="" style="background: ;">
+					    <div class="">
+					        <label>账号:</label>
+					        <input type="text"  placeholder="请输入账号">
+					    </div>
+					     <div class="">
+					        <label>密码:</label>
+					        <input type="password" placeholder="请输入密码" >
+					    </div>
+					</form>
+					<div class="conter">
+						<span> <a href="#">注册新号</a> / <a href="#">忘记密码</a></span>
+					</div>
+					<div class="son">
+						<a href="#">微信一键登录</a>
+					</div>
+					</div>
+				</div>
+		<div class="mui-content mui-scroll-wrapper" id="pullrefresh">
+			<div class="mui-scroll">
 				<div class="bacck_whit">
 					<ul class="sub1_lis">
 						<li class="a" htmlName = 'subson/subaskdoctor.html'>
@@ -140,6 +170,13 @@
 		</div>
 		<script type="text/javascript" src="../js/sub1/sub1.js" ></script>
 		<script type="text/javascript">
+	document.getElementById('register').addEventListener('tap',function(){
+				$('.box_mengban').show();
+		});
+		
+		document.getElementById('box_mengban').addEventListener('tap',function(){
+				$('.box_mengban').hide();
+		});
 		document.getElementById('search').addEventListener('tap',function(){
 //			console.log(22222);
 			 mui.openWindow({
@@ -151,6 +188,8 @@
 				    },
 			})
 		});
+		
+		
 		</script>
 	</body>
 </html>

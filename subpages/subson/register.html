@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			body,.mui-scroll-wrapper {
+				background-color: rgba(204,204,204,0.1);
+			}
+			#register_mianban{	
+				margin: 100px auto 0;
+				width: 80%;
+				height: 250px;
+				border: 1px solid #2AC845;
+				border-radius: 10px;	
+				box-shadow: 0 0 5px #2AC845;
+				overflow: auto;
+				background: #fff;
+			}
+			#register_mianban input{
+				width: 70%;
+				height:45px;
+				/*border: 0 none;*/
+			}
+			#register_mianban label{
+				font-size: 25px;
+				margin-left: 10px;
+			}
+			form{
+				margin-top: 20px;
+			}
+			 .conter{
+			 	margin-top: 10px;
+				text-align: center;
+			}
+			 .conter>span{
+			 	font-size: 18px;
+			 }
+			 .conter>span>a{
+			 	color: #2AC845;
+			 }
+			 .son{
+			 	margin-top: 30px;
+			 	text-align: center;
+			 }
+			 .son>a{
+			 	font-size: 20px;
+			 	color: #fff;
+			 	background:#2AC845;
+			 	padding: 5px 10px;
+			 	border-radius: 5px;
+			 }
+		</style>
+	</head>
+
+	<body>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div id="register_mianban">
+					<form class="" style="background: ;">
+					    <div class="">
+					        <label>账号:</label>
+					        <input type="text"  placeholder="请输入账号">
+					    </div>
+					     <div class="">
+					        <label>密码:</label>
+					        <input type="password" placeholder="请输入密码" >
+					    </div>
+					</form>
+					<div class="conter">
+						<span> <a href="#">注册新号</a> / <a href="#">忘记密码</a></span>
+					</div>
+					<div class="son">
+						<a href="#">微信一键登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
